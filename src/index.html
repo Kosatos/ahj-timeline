@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<title>Timeline</title>
+</head>
+
+<body>
+
+	<div class="app" id="app">
+
+		<div class="app__container">
+
+			<div class="feed">
+
+				<div class="feed__window">
+					<ul class="feed__posts">
+						<!-- <li class="feed__post post-feed">
+							<span class="post-feed__date">16.06.22 08:50</span>
+							<p class="post-feed__text">Type your post here Type your post here Type your post here Type
+								your post here Type your post here Type your post here Type your post here</p>
+							<span class="post-feed__coords">[51.50851, −0.12572]</span>
+						</li> -->
+					</ul>
+					<form class="feed__form form-feed" id="feed-form">
+						<div class="form-feed__input-container">
+							<input type="text" class="form-feed__input" id="post" name="post"
+								placeholder="Type your post here">
+								<div class="form-feed__media-controllers media-controllers">
+									<span class="media-controllers__audio"></span>
+									<span class="media-controllers__timer"></span>
+									<span class="media-controllers__video"></span>
+								</div>
+						</div>
+					</form>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="warning-popup hidden">
+		<div class="warning-popup__container">
+			<h2 class="warning-popup__title">
+				Что-то пошло не так
+			</h2>
+			<p class="warning-popup__text">
+				К сожалению, нам не удалось определить Ваше местоположение, пожалуйста, дайте разрешение на
+				использование
+				геолокации, либо введите координаты вручную.
+			</p>
+			<span class="warning-popup__text">Широта и долгота через запятую</span>
+			<form class="warning-popup__form form-warning" id="form-warning">
+				<input type="text" class="form-warning__input" id="coords-input" placeholder="Введите Ваши координаты">
+				<div class="form-warning__buttons">
+					<button class="form-warning__btn cancel-btn">Отмена</button>
+					<button class="form-warning__btn ok-btn">Ok</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+</body>
+
+</html>
